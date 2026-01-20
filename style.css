@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma sans-serif;
+}
+
+
+html {
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8.5rem;
+    
+  }
+  
+  html::-webkit-scrollbar {
+    width: 0.6rem;
+    
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: #fff;
+    
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: dodgerblue;
+    border-radius: 5rem;
+  }
+
+
+body{
+    /* background-color: rgba(123, 162, 255, 1); */
+    max-width: 100%;
+}
+
+/* barre de navigation */
+
+.logo{
+    height: 60px;
+    width: auto;
+    margin-left: 20px;
+    margin: 30px;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    align-items: center;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+nav ul li {
+    list-style-type: none;
+   margin-right: 30px;
+   text-align: center;
+}
+nav ul li :hover {
+    border-bottom: 3px solid dodgerblue;
+    border-radius: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+   padding-bottom: 5px;
+    text-transform: capitalize;
+    padding: 2px 5px;
+    color: black;
+    cursor: default;
+}
+nav div button a{
+    text-decoration: none;
+    color: black;
+}
+nav div  {
+    display: flex;
+    margin-top: -80px;
+    justify-content: flex-end;
+}
+nav div button {
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    cursor: pointer;
+}
+nav div button:hover{
+    box-shadow: 2px 2px 5px;
+    background-color: white; 
+}  
+
+/* ****************************** */
+
+/* entete de page */
+
+header {
+    margin-top: 30px;
+    height: auto;
+
+    border-top: 5px solid black ;
+    background-image: url(favicon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 5px;
+}
+
+
+header div{
+    margin-top: 20px;
+    margin-left: 50px;
+    letter-spacing: 2px;
+    color: white;
+}
+header div span{
+    color: dodgerblue;
+}
+header div h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+/* header .description{
+    display: flex;
+} */
+header div p{
+    letter-spacing: normal;
+    margin-top: 30px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 25px;
+}
+header div button a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: default;
+}
+header .btn{
+    width: 38%;
+    display: flex;
+    justify-content: space-between;
+}
+header .btn button{
+    border-radius: 5px;
+    border: 0.5px solid blue;
+    background-color:dodgerblue;
+    width: 150px;
+    padding: 10px;
+     margin-bottom: 10px;
+     align-items: center;
+}
+header .btn button:hover{
+  border: 1px solid dodgerblue;
+  background-color: transparent;
+  transition: all 700ms ease-in-out;
+}
+.description aside{
+    display: flex;
+    border: 1px solid ;
+    width: 60%;
+    border-radius: 10px;
+    background-color: azure;
+    margin-bottom: 10px;
+    margin-left: 15em;
+max-height: auto;
+animation: aside 5s ease-in;
+    animation-direction: reverse;
+    
+}
+ aside:hover{
+    transform: translateY(-3px);
+    transition: transform 400ms ease;
+
+}
+aside div p {
+    color: black;
+    text-align: left;
+    font-size: 25px;
+    margin: 0 0;
+}
+aside div img{
+    height: 200px;
+   width: auto;
+}
+/* *************************** */
+
+/* partie responsive */
+
+
+@media  all  and (max-width: 800px) {
+    .logo{
+        display: none;
+    }
+    nav ul {
+    display: flex;
+    /* flex-direction: column; */
+    flex-basis: 200;
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+}
+nav div{
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+nav ul li {
+    list-style-type: none;
+   margin-right: 30px;
+   text-align: center;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    flex-basis: 200;
+}
+header .btn{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+header .btn button{
+    border-radius: 5px;
+    border: 0.5px solid blue;
+    background-color:dodgerblue;
+    width: auto;
+    padding: 10px;
+    margin-top: 10px;
+     margin-bottom: 15px;
+     align-items: center;
+}
+.description aside{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid ;
+    width: 100%;
+    /* max-width: 100%; */
+    margin-left: 0px;
+    padding-left: 0;
+}
+
+aside div p {
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 2em;
+}
+}
+/* @keyframes aside {
+    100%{
+        transform: translatey(300px);
+    }
+    0%{
+        transform: translateX(0);
+    }
+} */
