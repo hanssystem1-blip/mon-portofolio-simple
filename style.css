@@ -3,34 +3,25 @@
     padding: 0;
     font-family: tahoma sans-serif;
 }
-
-
 html {
-    /* font-size: 62.5%; */
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 8.5rem;
-    
   }
   
   html::-webkit-scrollbar {
     width: 0.6rem;
-    
   }
   
   html::-webkit-scrollbar-track {
     background: #fff;
-    
   }
   
   html::-webkit-scrollbar-thumb {
     background: dodgerblue;
     border-radius: 5rem;
   }
-
-
 body{
-    /* background-color: rgba(123, 162, 255, 1); */
     max-width: 100%;
 }
 
@@ -40,7 +31,17 @@ body{
     height: 60px;
     width: auto;
     margin-left: 20px;
-    margin: 30px;
+}
+nav{
+    background-color: white;
+    padding: 1rem ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-around;
+    display: flex;
 }
 nav ul {
     display: flex;
@@ -73,18 +74,24 @@ nav div button a{
 }
 nav div  {
     display: flex;
-    margin-top: -80px;
-    justify-content: flex-end;
+    justify-content:space-evenly;
+    width: 20%;
+    padding: 0;
+    margin: 0;
 }
-nav div button {
+
+.option button {
     margin-right: 10px;
-    border-radius: 10px;
-    padding: 5px 10px;
+    border-radius: 15px;
+    padding: 0px 0px;
     border: none;
+    width: 80px;
+    height: auto;
     text-align: center;
     text-transform: capitalize;
     font-size: 15px;
     cursor: pointer;
+    justify-content: space-between;
 }
 nav div button:hover{
     box-shadow: 2px 2px 5px;
@@ -107,15 +114,13 @@ header {
     background-size: cover;
     padding-bottom: 5px;
 }
-
-
 header div{
     margin-top: 20px;
     margin-left: 50px;
     letter-spacing: 2px;
     color: white;
 }
-header div span{
+header div span, .description aside p span{
     color: dodgerblue;
 }
 header div h1 {
@@ -151,40 +156,21 @@ header .btn button{
     padding: 10px;
      margin-bottom: 10px;
      align-items: center;
+     border: 0.3px solid blue;
 }
 header .btn button:hover{
   border: 1px solid dodgerblue;
   background-color: transparent;
   transition: all 700ms ease-in-out;
 }
-.description aside{
-    display: flex;
-    border: 1px solid ;
-    width: 60%;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 10px;
-    margin-left: 15em;
-max-height: auto;
-animation: aside 5s ease-in;
-    animation-direction: reverse;
-    
-}
- aside:hover{
-    transform: translateY(-3px);
-    transition: transform 400ms ease;
 
-}
-aside div p {
-    color: black;
-    text-align: left;
-    font-size: 25px;
-    margin: 0 0;
-}
 aside div img , section img{
     height: 200px;
    width: auto;
 }
+
+/* partie servise digitale */
+
 section .services-card{
 display: flex;
 width: 100%;
@@ -195,14 +181,16 @@ margin: 20px 10px;
 }
 section .services-card .card{
 display: flex;
+flex-direction: column;
 width: 250px;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0.3px 0.3px 2px darkgray;
 }
 section .services-card .card:hover{
-transform: translatey(-3px);
-    transition: transform 400ms ease;
+transform: translatey(-5px);
+    transition: all 600ms ease-in-out;
+    background-color: rgba(150, 10, 255, 1);
 }
 .card p{
     letter-spacing: 1.3px;
@@ -210,6 +198,10 @@ transform: translatey(-3px);
     align-items: center;
     padding: 10px;
 }
+/* ********************** */
+/* ********************** */
+
+
 section h1{
     text-align: center;
     font-size: 45px;
@@ -219,13 +211,96 @@ section h1{
     padding-bottom: 20px;
 }
 input[type="button"]{
-    background-color: dodgerblue;
+    background-color: blue;
     border-radius: 5px;
     border: none;
-    padding: 5px;
+    padding: 10px;
+    font-size: 15px;
+    position: static;
+    color: #fff;
+    text-transform: capitalize;
+    text-overflow: clip;
+}
+input[type="button"]:hover{
+  background-color: white;
+  color: black;
+}
+.card p span{
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 0px;
 }
 
+/* partie about */
 
+
+.description aside{
+    display: flex;
+    width: 60%;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 15em;
+    text-align: center;
+     border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0.3px 0.3px 2px darkgray;
+max-height: auto;
+animation: aside 5s ease-in;
+    animation-direction: reverse;
+    background-color: rgba(155, 159, 189,0.2);
+    
+}
+aside div p {
+    color: black;
+    text-align: left;
+    font-size: 30px;
+    margin: 10px 70px;
+    text-align: center;
+}
+.contact button{
+    padding: 10px;
+    align-items: space-between;
+     border-radius: 5px;
+    background-color:dodgerblue;
+    width: 150px;
+    padding: 10px;
+     margin-bottom: 10px;
+     align-items: center;
+     border: 0.3px solid blue;
+
+}
+.contact button:hover{
+  border: 1px solid dodgerblue;
+  background-color: transparent;
+  transition: all 700ms ease-in-out;
+
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contact{
+    margin-top: 30px;
+     display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+/* petit bas de page simple */
+
+footer{
+    height: 100px;
+    background-color: rgb(155, 159, 189);
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    justify-content: center;
+}
 /* *************************** */
 
 
@@ -241,12 +316,29 @@ input[type="button"]{
     flex-basis: 200;
     margin-top: 30px;
     flex-wrap: wrap;
-
 }
-nav div{
+nav{
+    background-color: dodgerblue;
+}
+nav div  {
     display: flex;
-    margin-top: 20px;
-    justify-content: flex-end;
+    height: 30px;
+    width: auto;
+    padding: 0;
+    margin-left: 0;
+}
+
+.option button {
+    margin-right: 10px;
+    border-radius: 15px;
+    padding: 0px 0px;
+    border: none;
+    width: 80px;
+    height: auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    cursor: pointer;
 }
 nav ul li {
     list-style-type: none;
@@ -255,6 +347,9 @@ nav ul li {
     margin-bottom: 10px;
     flex-grow: 1;
     flex-basis: 200;
+}
+header div{
+    margin-top: 100px;
 }
 header .btn{
     width: 70%;
@@ -275,31 +370,57 @@ header .btn button{
     display: flex;
     flex-direction: column;
     border: 1px solid ;
-    width: 100%;
-    margin-left: 0px;
+    width: 90%;
+    margin-left: 50px;
     padding-left: 0;
 }
 
 aside div p {
     color: black;
     text-align: left;
-    font-size: 20px;
-    padding-bottom: 2em;
+    font-size: 25px;
+    padding-bottom: 1em;
 }
 .services-card{flex-grow: 1;
     flex-basis: 200;
-flex-wrap: wrap;}
+flex-wrap: wrap;
 }
 .services-card .card{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
+.contact{
+    margin-top: 30px;
+      width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact button{
+border-radius: 5px;
+    border: 0.5px solid blue;
+    background-color:dodgerblue;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+     margin-bottom: 15px;
+     margin-left: 80px;
+     align-items: center;
+}
+
+}
+
 /* @keyframes aside {
-    100%{
-        transform: translatey(300px);
-    }
     0%{
+        transform: translatex(300px);
+       visibility: hidden;
+       display: none;
+    }
+    100%{
         transform: translateX(0);
+        visibility: visible;
+        overflow: hidden;
     }
 } */

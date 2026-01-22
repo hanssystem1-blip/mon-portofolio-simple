@@ -9,15 +9,8 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 <body>
-
-        <img class="logo" src="img/logo.jpg" alt="">
-    
     <nav  >
-        <!-- <span class=""><ion-icon name="logo-googleplus"></ion-icon></span> -->
-        <div>
-            <button> <a href="">s'inscrire</a></button>
-            <button> <a href="">connexion</a></button>
-        </div>
+        <img class="logo" src="img/logo.jpg" alt="">
         <ul>
             <li>
                 <a href="#">accueil</a>
@@ -29,15 +22,18 @@
                 <a href="#">projets</a>
             </li>
             <li>
-                <a href="#">a propos</a>
+                <a href="#about">a propos</a>
             </li>
         </ul>
-    </nav>
+        <div class="option">
+            <button> <a href="">s'inscrire</a></button>
+            <button> <a href="">connexion</a></button>
+        </div>
+    </nav><br><br>
     <header>
         <div>
             <h1>
                 Decouvrez les <span>avantages</span> et les bienfaits du <span>digital.</span>
-            
             </h1>
             <p>
                 la techonologie de nos jours represente l'un des domaines les plus accessibles
@@ -48,62 +44,81 @@
             <button> <a href="#">voir plus  </a></button>
             <button > <a href="#">me contacter</a></button>
         </div>
-        <div class="description">
-            <aside>
-                <div class="perso">
-                    <img src="img/logo.jpg" alt="">
-                </div>
-                <div>
-                    <p>
-                        <span class="alors">Alors!!</span> <br>
-                        <em>
-                            moi c'est <span>HANS</span>
-                             developpeur front-end et passionné de nouvelle technologie telqus <span>react, angular, node.js, tailwindcss, laravel, django... </span>
-    
-                        </em>
-                    </p>
-                </div>
-            </aside>
-        </div>
     </header>
     <section id="services">
-        <h1>Nos Services digitale.</h1>
+        <h1>Nos Services Digitale.</h1>
         <div class="services-card">
             <div class="card">
-                <img src="img/zik.jpg" alt="" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur 
-                    adipisicing elit. Eum provident tempore 
-                    iusto dolorum et, porro harum
-                     tenetur natus nihil assumenda!</p>
+                <img src="img/design.jpeg" alt="" alt="">
+                <p>
+                    <span>UI/UI Design</span><br>
+                    ✅conception d'interface utilisateur (UI) et experience (UX) <br>
+                    <span>maintenance et optimisation de sites</span>
+                    ✅correction des bugs
+                </p>
                      <input type="button" value="recommander !!">
             </div>
             <div class="card">
-                <img src="img/zik.jpg" alt="" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur 
-                    adipisicing elit. Eum provident tempore 
-                    iusto dolorum et, porro harum
-                     tenetur natus nihil assumenda!</p>
+                <img src="img/base-de-donnees.jpeg" alt="" alt="">
+                <p>
+                    <span>conception et gestion de bases de donnees</span><br>
+                    ✅creation de base de donnees(MySQL,MongoDB) <br>
+                    ✅stokage,gestion et optimisation des donnees
+                </p>
                      <input type="button" value="recommander !!">
             </div>
             <div class="card">
-                <img src="img/zik.jpg" alt="" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur 
-                    adipisicing elit. Eum provident tempore 
-                    iusto dolorum et, porro harum
-                     tenetur natus nihil assumenda!</p>
+                <img src="img/paiement.jpeg" alt="" alt="">
+                <p>
+                    <span>Integration de systemes (API,paiements)</span><br>
+                    ✅ connexion a des services externes <br>
+                    ✅ integration de paiements en ligne,reseaux sociaux
+                </p>
                      <input type="button" value="recommander !!">
             </div>
             <div class="card">
-                <img src="img/zik.jpg" alt="" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur 
-                    adipisicing elit. Eum provident tempore 
-                    iusto dolorum et, porro harum
-                     tenetur natus nihil assumenda!</p>
+                <img src="img/systeme.jpeg" alt="" alt="">
+                <p>deploiement de logiciel sur mesure :<br>
+                    ✅ logiciel pour entreprise <br><br>
+                    ✅outils specifique pour automatisation <br><br>
+                    
+                </p>
                      <input type="button" value="recommander !!">
             </div>
             
         </div>
 
     </section>
+    <section id="about">
+        <h1>A Propos de Moi!!</h1>
+        <div class="description">
+            <aside>
+                <div class="perso">
+                    <img src="img/zik.jpg" alt="">
+                </div>
+                <div>
+                    <p>
+                        <span class="alors">Alors!!</span> <br>
+                        <em>
+                            Moi c'est <span>HANS</span>
+                             Developpeur front-end et passionné de nouvelle technologie telqus <span>React, Angular, Node.js, Tailwindcss, Laravel, Django... </span>
+    
+                        </em>
+                    </p>
+                   <div class="contact">
+                    <button>
+                        <a href="https://www.whatsapp.com?@hanssystem">me contacter</a>
+                        </button>
+                    <button>
+                        <a href="#">s'inscrire</a>
+                    </button>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        &copy;copyright 2026 | tout droit reservé <br><br><br>
+        <span>by SyStem</span>
+    </footer>
 </body>
 </html>
