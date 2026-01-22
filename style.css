@@ -100,7 +100,7 @@ header {
     height: auto;
 
     border-top: 5px solid black ;
-    background-image: url(favicon.jpg);
+    background-image: url(img/favicon.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
