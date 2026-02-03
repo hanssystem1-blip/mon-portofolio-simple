@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,48 +10,54 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 <body>
-    <nav  >
-        <img class="logo" src="img/logo.jpg" alt="">
-        <ul>
-            <li>
-                <a href="#">accueil</a>
-            </li>
-            <li>
-                <a href="#services">services</a>
-            </li>
-            <li>
-                <a href="#">projets</a>
-            </li>
-            <li>
-                <a href="#about">a propos</a>
-            </li>
-        </ul>
-        <div class="option">
-            <button> <a href="">s'inscrire</a></button>
-            <button> <a href="">connexion</a><ion-icon name="power" class="conn"></ion-icon></button>
+    <nav>
+        <div>
+            <img class="logo" src="img/logo.jpg" alt="">
         </div>
-        <ion-icon name="sunny" c></ion-icon>
+        <div>
+            <ul>
+                <li>
+                    <a href="#home">home</a>
+                </li>
+                <li>
+                    <a href="#services">services</a>
+                </li>
+                <li>
+                    <a href="#projets">projects</a>
+                </li>
+                <li>
+                    <a href="#about">about</a>
+                </li>
+            </ul>
+        </div>
+        <div class="option">
+            <ion-icon name="sunny" class="dark"></ion-icon>
+            <button class="inscrire"> <a href="">s'inscrire</a></button>
+            <button> <ion-icon name="power" class="conn"></ion-icon><a href="">connexion</a></button>
+
+        </div>
     </nav><br><br>
     <header>
         <div>
             <h1>
-                Decouvrez les <span>avantages</span> et les bienfaits du <span>digital.</span>
+                <!-- Decouvrez les <span>avantages</span> et les bienfaits du <span>digital.</span> -->
+                 Transformer <span>vos idees</span> en experiences digitales <span>inoubliables</span>
             </h1>
             <p>
                 la techonologie de nos jours represente l'un des domaines les plus accessibles
-                et requiert une expertise dans le domaine choisir. 
+                et requiert une expertise dans le domaine choisir.
             </p>
-        </div> 
+        </div>
         <div class="btn">
-            <button> <a href="#">voir plus  </a></button>
-            <button > <a href="#">me contacter</a></button>
+            <button class="header-contact"> <a href="#">voir plus</a></button>
+            <button> <a href="#">me contacter</a></button>
         </div>
     </header>
-    <div class="etoile">
+    <!-- <div class="etoile">
         <ion-icon name="star" class="star" ></ion-icon> 
     <ion-icon name="star" class="star" ></ion-icon> 
     <ion-icon name="star" class="star" ></ion-icon>
-    </div>
+    </div> -->
     <section id="services">
         <h1>Nos Services Digitale.</h1>
         <div class="services-card">
@@ -58,42 +65,64 @@
                 <img src="img/design.jpeg" alt="" alt="">
                 <p>
                     <span>UI/UI Design</span><br>
-                    ✅conception d'interface utilisateur (UI) et experience (UX) <br>
+                    ☑️ conception d'interface utilisateur (UI) et experience (UX) <br>
                     <span>maintenance et optimisation de sites</span>
-                    ✅correction des bugs
+                    ☑️ correction des bugs
                 </p>
-                     <input type="button" value="recommander !!">
+                <input type="button" value="recommander !!">
             </div>
             <div class="card">
                 <img src="img/base-de-donnees.jpeg" alt="" alt="">
                 <p>
                     <span>conception et gestion de bases de donnees</span><br>
-                    ✅creation de base de donnees(MySQL,MongoDB) <br>
-                    ✅stokage,gestion et optimisation des donnees
+                    ☑️ creation de base de donnees(MySQL,MongoDB) <br>
+                    ☑️ stokage,gestion et optimisation des donnees
                 </p>
-                     <input type="button" value="recommander !!">
+                <input type="button" value="recommander !!">
             </div>
             <div class="card">
                 <img src="img/paiement.jpeg" alt="" alt="">
                 <p>
                     <span>Integration de systemes (API,paiements)</span><br>
-                    ✅ connexion a des services externes <br>
-                    ✅ integration de paiements en ligne,reseaux sociaux
+                    ☑️ connexion a des services externes <br>
+                    ☑️ integration de paiements en ligne,reseaux sociaux
                 </p>
-                     <input type="button" value="recommander !!">
+                <input type="button" value="recommander !!">
             </div>
             <div class="card">
                 <img src="img/systeme.jpeg" alt="" alt="">
-                <p>deploiement de logiciel sur mesure :<br>
-                    ✅ logiciel pour entreprise <br><br>
-                    ✅outils specifique pour automatisation <br><br>
-                    
+                <p><span>deploiement de logiciel sur mesure :</span><br>
+                    ☑️ logiciel pour entreprise <br><br>
+                    ☑️ outils specifique pour automatisation <br><br>
+
                 </p>
-                     <input type="button" value="recommander !!">
+                <input type="button" value="recommander !!">
             </div>
-            
         </div>
 
+    </section>
+    <section id="projets">
+        <h1>Nos projets realisés.</h1>
+        <div class="container">
+            <div>
+                <!-- <span>1️⃣</span> -->
+                <h3>AUTHENTIFICATION OTP</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam saepe ullam inventore corrupti minus delectus impedit nostrum sed esse, necessitatibus mollitia aut sit eius, itaque quas cupiditate nesciunt enim!</p>
+                <img src="img/favicon.jpg" alt="">
+            </div>
+            <div>
+                <!-- <span>2️⃣</span> -->
+                <h3>SITE VITRINE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam saepe ullam inventore corrupti minus delectus impedit nostrum sed esse, necessitatibus mollitia aut sit eius, itaque quas cupiditate nesciunt enim!</p>
+                <img src="img/favicon.jpg" alt="">
+            </div>
+            <div>
+                <!-- <span>3️⃣</span> -->
+                <h3>SERVICE DE CONSULTATION MEDICALE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam saepe ullam inventore corrupti minus delectus impedit nostrum sed esse, necessitatibus mollitia aut sit eius, itaque quas cupiditate nesciunt enim!</p>
+                <img src="img/favicon.jpg" alt="">
+            </div>
+        </div>
     </section>
     <section id="about">
         <h1>A Propos de Moi!!</h1>
@@ -107,18 +136,20 @@
                         <span class="alors">Alors!!</span> <br>
                         <em>
                             Moi c'est <span>HANS</span>
-                             Developpeur front-end et passionné de nouvelle technologie telques <span>React, Angular, Node.js, Tailwindcss, Laravel, Django... </span>
-    
+                            Developpeur front-end et passionné de nouvelle technologie telques <span>React, Angular,
+                                Node.js, Tailwindcss, Laravel, Django... </span>
+
                         </em>
                     </p>
-                   <div class="contact">
-                    <button>
-                        <a href="https://www.whatsapp.com?@mehanssystem " target="_blank" ><ion-icon name="call" class="call" ></ion-icon>me contacter</a>
+                    <div class="contact">
+                        <button>
+                            <a href="https://www.whatsapp.com?@mehanssystem " target="_blank"><ion-icon name="call"
+                                    class="call"></ion-icon>me contacter</a>
                         </button>
-                    <button>
-                        <a href="#">s'inscrire</a>
-                    </button>
-                </div>
+                        <button>
+                            <a href="#">s'inscrire</a>
+                        </button>
+                    </div>
             </aside>
         </div>
     </section><br><br><br>
@@ -126,7 +157,8 @@
         &copy;copyright 2026 | tout droit reservé <br><br><br>
         <span>by SyStem</span>
         <a href="https://www.linkedin.com" target="_blank"><ion-icon class="icon" name="logo-linkedin"></ion-icon></a>
-        <a href="https://github.com/hanssystem1-blip" target="_blank"><ion-icon class="icon" name="logo-github"></ion-icon></a>
+        <a href="https://github.com/hanssystem1-blip" target="_blank"><ion-icon class="icon"
+                name="logo-github"></ion-icon></a>
         <a href="https://www.whatsapp.com" target="_blank"><ion-icon class="icon" name="logo-whatsapp"></ion-icon></a>
         <a href="https://www.wordpress.com" target="_blank"><ion-icon class="icon" name="logo-wordpress"></ion-icon></a>
 
