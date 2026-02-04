@@ -1,5 +1,19 @@
-document.getElementById("titre").innerHTML = "hello salut";
-// dt = new Date();
-Nom = "hansystem 3.00";
-getDate(y);
-console.log(Nom.toUpperCase());
+$(document).ready(function () {
+    $('.dark').click(function () {
+        $('footer').toggleClass('fond');
+
+        $('body,nav').toggleClass('active');
+        $('ion-icon').toggleClass('change');
+        $('header,section,p,').toggleClass('blanc');
+    });
+});
+// rot = document.getElementById('change');
+    // rot.style.color = 'white';
+
+// document.getElementById('change').addEventListener(
+//     "click" ,()=>{
+//         rot = document.getElementById('change');
+//     rot.style.color = 'white';
+
+//     }
+// );

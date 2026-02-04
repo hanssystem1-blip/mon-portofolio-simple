@@ -26,10 +26,12 @@ html::-webkit-scrollbar-thumb {
     border-radius: 5rem;
 }
 
-body {
+body{
     max-width: 100%;
     /* position: absolute; */
-    font-family: "Open Sans",sans-serif;
+    /* font-family: "Open Sans",sans-serif; */
+    /* background-color: #111; */
+    /* transition: all 300ms ease-in; */
 
 }
 
@@ -44,8 +46,24 @@ body {
 .dark {
     font-size: 25px;
     margin-right: 20px;
+    /* color: #000; */
 }
+.change{
+    color: #fff;
+}
+.blanc{
+    color: #fff;
+}
+.fond {
+    background-color:  rgba(155, 159, 189, 0.3);
 
+}
+/* .option div{
+    color: #000;
+}
+.option div .dark{
+    color: white;
+} */
 nav {
     /* background-color: rgba(62, 158, 255, 0.9); */
     /* border-radius: 10px; */
@@ -54,7 +72,7 @@ nav {
     position: fixed;
     width: 100%;
     font-family: "Playfair Display",serif;
-
+    /* background-color: #000; */
     z-index: 1000;
     box-shadow: 0px 0px 5px 0px gray;
     display: flex;
@@ -93,7 +111,13 @@ nav div button a {
     text-decoration: none;
     color: black;
 }
-
+.option{
+    display: flex;
+}
+.active{
+    background-color: rgb(30, 30, 30);
+    transition: all 200ms cubic-bezier(0.5, 0.4, 0.1, 1);
+}
 .option button {
     margin-right: 10px;
     border-radius: 15px;
@@ -105,15 +129,12 @@ nav div button a {
     text-transform: capitalize;
     font-size: 15px;
     cursor: pointer;
+    
 }
+.option button:hover{
+    background-color: rgba(62, 158, 255, 0.9);
 
-/* nav div button:hover{
-    box-shadow: 2px 2px 5px;
-    background-color: white; 
-    border: 0.5px solid gray;
-    background-color: #fff;
-    color: #fff;
-}   */
+}
 
 /* ****************************** */
 
@@ -389,13 +410,14 @@ footer {
     text-align: center;
     padding-top: 50px;
     justify-content: center;
+    border-top: 2px solid rgba(62, 158, 255, 0.9);
 }
 
-.star {
-    /* background-color: yellow; */
+/* .star {
+    background-color: yellow;
     color: yellow;
     font-size: 30px;
-}
+} */
 
 /* .etoile{
     display: flex;
@@ -430,21 +452,32 @@ footer a {
 /* partie responsive */
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 899px) {
     .logo {
         display: none;
     }
 
     nav ul {
         display: flex;
-        flex-basis: 200;
+        /* flex-basis: 200; */
+        /* flex-direction: column; */
+        /* padding-top: 0; */
         margin-top: 30px;
         flex-wrap: wrap;
     }
-
+    nav ul li a{
+        font-size: 20px;
+        
+    }
     nav {
         /* background-color: rgba(172, 172, 172, 0.8); */
         background-color: #fff;
+        flex-direction: column;
+        position: fixed;
+        /* padding-top: 0; */
+        margin-top: 0;
+        /* margin-left: 30px; */
+        /* width: 100%; */
     }
 
     nav div {
@@ -453,6 +486,7 @@ footer a {
         width: auto;
         padding: 0;
         margin-left: 0;
+        /* flex-direction: column; */
     }
 
     .option button {
@@ -460,12 +494,13 @@ footer a {
         border-radius: 15px;
         padding: 0px 0px;
         border: none;
-        width: 80px;
+        width: auto;
         height: auto;
         text-align: center;
         text-transform: capitalize;
         font-size: 15px;
         cursor: pointer;
+        margin-bottom: 15px;
     }
 
     nav ul li {
@@ -478,13 +513,20 @@ footer a {
     }
 
     header div {
-        margin-top: 100px;
+        margin-top: 50px;
     }
-
+    header {
+    margin: 30px 0px;
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+}
     header .btn {
-        width: 70%;
+        width: 90%;
         display: flex;
         flex-direction: column;
+        /* margin-left: 30px; */
+        justify-content: center;
     }
 
     header .btn button {
@@ -497,31 +539,32 @@ footer a {
         margin-bottom: 15px;
         align-items: center;
     }
-
+    
     .description aside {
         display: flex;
         flex-direction: column;
         border: 1px solid;
-        width: 70%;
-        margin-left: 50px;
+        width: 80%;
+        margin-left: 60px;
         padding-left: 0;
     }
 
     aside div p {
         color: black;
-        text-align: left;
-        font-size: 25px;
+        text-align: center;
+        font-size: 15px;
         padding-bottom: 1em;
     }
 
     .services-card {
         flex-grow: 1;
-        flex-basis: 200;
+        flex-basis: 100;
         flex-wrap: wrap;
+        width: 80%;
     }
 
     .services-card .card {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
         margin-bottom: 20px;
     }
@@ -557,10 +600,12 @@ footer a {
         flex-basis: 100;
         flex-wrap: wrap;
         margin-left: 0;
+        width: 80%;
+        margin-left:20px ;
     }
 
     .container div {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
     }
 
