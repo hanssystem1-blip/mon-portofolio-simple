@@ -9,6 +9,8 @@
 
     <link rel="icon" type="image/png" href="img/icone.jpeg">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -34,19 +36,21 @@
         </div>
         <!-- onclick="document.body.classList.toggle('dark') -->
         <div class="option">
+
             <div>
-                <span><ion-icon name="sunny" class="dark"></ion-icon></span>
+                <ion-icon name="sunny" id="change" onclick="rotate();" class="dark"></ion-icon>
             </div>
             <button>
                 <ion-icon name="person-add"></ion-icon>
-                <a href="#">s'inscrire</a> </button>
-            <button> 
+                <a href="#">s'inscrire</a>
+            </button>
+            <button>
                 <ion-icon name="power" class="conn"></ion-icon>
                 <a href="">connexion</a></button>
 
         </div>
     </nav><br><br>
-    <header>
+    <header id="home">
         <div>
             <h1>
                 <!-- Decouvrez les <span>avantages</span> et les bienfaits du <span>digital.</span> -->
@@ -159,7 +163,7 @@
                     </p>
                     <div class="contact">
                         <button>
-                            <a href="https://www.whatsapp.com?@mehanssystem " target="_blank"><ion-icon name="call"
+                            <a href="https://wa.me/237674965999 " target="_blank"><ion-icon name="call"
                                     class="call"></ion-icon>Contacter</a>
                         </button>
                         <button>
